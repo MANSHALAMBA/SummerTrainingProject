@@ -1,0 +1,98 @@
+html{
+
+
+    border: solid white 15px;
+}
+
+
+body{
+
+        background-color: black;
+   
+
+}
+h1{
+     text-align: center;
+      font-weight: bold;
+      color:white;
+      margin-top: 50px;
+      word-spacing: 10px;
+      font-size: 60px;
+      text-shadow: 15px 15px 10px white;
+      
+      /stylesheets/
+}
+
+
+#leftchild {
+     border-radius: 9px;
+     height: 350px;
+    background-color: whitesmoke;
+    float:left;
+    margin-left:12px;
+    margin-top: 100px;
+    width: 1000px;
+    
+    box-shadow: 15px 15px 15px white;
+
+}
+
+#leftchild #heading{
+
+        
+           font-size: 45px;
+           text-align:left;
+           margin-left:20px;
+           padding-top: 10px; 
+           margin-bottom: 0px;
+           padding-bottom: 0px;
+           font-family: 'Chela One', cursive;
+
+}
+#leftchild #info{
+
+                      margin-top:0px;
+                      padding-top: 0px;
+                     line-height: 32px;
+                     font-size: 20px;
+                     font-family: 'Overlock', cursive;
+                     margin-left: 14px;
+
+
+}
+#rightchild {
+    border-radius: 9px;
+     height: 320px;
+    background-color: whitesmoke;
+    float:right;
+    margin-right:30px;
+    margin-top: 100px;
+    width: 1000px;
+    
+    box-shadow: -15px 15px 15px white;
+
+
+}
+#rightchild #heading{
+
+        
+    font-size: 45px;
+    text-align:left;
+    margin-left:20px;
+    padding-top: 10px; 
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-family: 'Chela One', cursive;
+
+}
+#rightchild #info{
+
+    margin-top:0px;
+    padding-top: 0px;
+   line-height: 32px;
+   font-size: 20px;
+   font-family: 'Overlock', cursive;
+   margin-left: 14px;
+
+
+}

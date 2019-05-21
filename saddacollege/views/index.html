@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-grid.css" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-grid.css.map" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-grid.min.css" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-grid.min.css.map" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-reboot.css" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-reboot.css.map" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.css" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.css.map" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css.map" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css.map" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css.map" type="css/text">
+    
+    <link rel="stylesheet" href="/javascripts/bootstrap.js" type="css/text">
+    <link rel="stylesheet" href="/javascripts/bootstrap.min.js" type="css/text">
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Bungee+Inline|Chela+One|Coda+Caption:800|Luckiest+Guy|Monoton|Press+Start+2P|Russo+One|Sigmar+One|Wendy+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bitter|Josefin+Sans|Libre+Franklin|Roboto+Slab" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.cd-testimonials-wrapper, .cd-testimonials-wrapper * {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.cd-testimonials-wrapper ul {
+  list-style: none;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #39393c;
+  background-color: #dadee1;
+}
+
+a {
+  color: #79b6e4;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.cd-testimonials-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 768px;
+  background-color: #39393c;
+  margin: 2em auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 20px 40px 70px;
+  z-index: 1;
+}
+.cd-testimonials-wrapper::after {
+  /* quotation mark */
+  content: '\201C';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  padding-top: 8px;
+  margin-left: -25px;
+  background: rgba(32, 32, 34, 0.9);
+  font-family: "Georgia", serif;
+  color: white;
+  font-size: 70px;
+  font-size: 4.375rem;
+  text-align: center;
+  /* visible on big devices only */
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .cd-testimonials-wrapper {
+    margin: 4em auto;
+    padding: 64px 50px 114px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-testimonials-wrapper::after {
+    /* quotation mark visible */
+    display: block;
+  }
+}
+
+.cd-testimonials {
+  color: white;
+  text-align: center;
+}
+.cd-testimonials:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-testimonials > li {
+  position: absolute;
+  opacity: 0;
+}
+.cd-testimonials > li:first-child {
+  position: relative;
+  opacity: 1;
+}
+.cd-testimonials p {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  padding: 0 14px;
+}
+@media only screen and (min-width: 768px) {
+  .cd-testimonials p {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-testimonials p {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 1.6;
+  }
+}
+
+.cd-author img, .cd-author .cd-author-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+.cd-author img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.cd-author .cd-author-info {
+  text-align: left;
+  line-height: 1.2;
+}
+.cd-author .cd-author-info li:first-child {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.cd-author .cd-author-info li:last-child {
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #6b6b70;
+}
+@media only screen and (min-width: 768px) {
+  .cd-author img {
+    width: 50px;
+    height: 50px;
+  }
+  .cd-author .cd-author-info {
+    line-height: 1.4;
+  }
+  .cd-author .cd-author-info li:first-child {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .cd-author .cd-author-info li:last-child {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+
+.flex-direction-nav li {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  top: 0;
+}
+.flex-direction-nav li:first-child {
+  left: 0;
+}
+.flex-direction-nav li:last-child {
+  right: 0;
+}
+.flex-direction-nav li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.flex-direction-nav li:hover {
+  background-color: #323234;
+}
+.no-touch .flex-direction-nav li a:hover {
+  background-color: #323234;
+}
+.flex-direction-nav li a::before, .flex-direction-nav li a::after {
+  /* left and right arrows in css only */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 13px;
+  background-color: white;
+}
+.flex-direction-nav li a::before {
+  -webkit-transform: translateY(-35px) rotate(45deg);
+  -moz-transform: translateY(-35px) rotate(45deg);
+  -ms-transform: translateY(-35px) rotate(45deg);
+  -o-transform: translateY(-35px) rotate(45deg);
+  transform: translateY(-35px) rotate(45deg);
+}
+.flex-direction-nav li a::after {
+  -webkit-transform: translateY(-27px) rotate(-45deg);
+  -moz-transform: translateY(-27px) rotate(-45deg);
+  -ms-transform: translateY(-27px) rotate(-45deg);
+  -o-transform: translateY(-27px) rotate(-45deg);
+  transform: translateY(-27px) rotate(-45deg);
+}
+.flex-direction-nav li:last-child a::before {
+  -webkit-transform: translateY(-35px) rotate(-45deg);
+  -moz-transform: translateY(-35px) rotate(-45deg);
+  -ms-transform: translateY(-35px) rotate(-45deg);
+  -o-transform: translateY(-35px) rotate(-45deg);
+  transform: translateY(-35px) rotate(-45deg);
+}
+.flex-direction-nav li:last-child a::after {
+  -webkit-transform: translateY(-27px) rotate(45deg);
+  -moz-transform: translateY(-27px) rotate(45deg);
+  -ms-transform: translateY(-27px) rotate(45deg);
+  -o-transform: translateY(-27px) rotate(45deg);
+  transform: translateY(-27px) rotate(45deg);
+}
+@media only screen and (min-width: 768px) {
+  .flex-direction-nav li {
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .flex-direction-nav li a::before, .flex-direction-nav li a::after {
+    background-color: #5e5e63;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+  }
+  .flex-direction-nav li a:hover::before, .flex-direction-nav li a:hover::after {
+    background-color: white;
+  }
+}
+
+.cd-see-all {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #252527;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6b6b70;
+  font-weight: 700;
+  font-size: 12px;
+  font-size: 0.75rem;
+  -webkit-transition: color, 0.2s;
+  -moz-transition: color, 0.2s;
+  transition: color, 0.2s;
+}
+.no-touch .cd-see-all:hover {
+  color: #79b6e4;
+}
+
+.cd-testimonials-all {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-testimonials-all .cd-testimonials-all-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.cd-testimonials-all .cd-testimonials-all-wrapper > ul {
+  width: 90%;
+  max-width: 1170px;
+  margin: 4em auto;
+}
+.cd-testimonials-all .cd-testimonials-all-wrapper > ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-testimonials-all .cd-testimonials-item {
+  margin-bottom: 2em;
+  opacity: 0;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translate3d(0, 0, 0) scale(0.4);
+  -moz-transform: translate3d(0, 0, 0) scale(0.4);
+  -ms-transform: translate3d(0, 0, 0) scale(0.4);
+  -o-transform: translate3d(0, 0, 0) scale(0.4);
+  transform: translate3d(0, 0, 0) scale(0.4);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .3s, opacity .3s;
+  -moz-transition: -moz-transform .3s, opacity .3s;
+  transition: transform .3s, opacity .3s;
+}
+.cd-testimonials-all p {
+  position: relative;
+  background: #79b6e4;
+  color: white;
+  padding: 2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+  border-radius: 0.25em;
+  margin-bottom: 1em;
+}
+.cd-testimonials-all p::after {
+  /* creating the triangle in css */
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 2em;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-top-color: #79b6e4;
+}
+.cd-testimonials-all .cd-author {
+  text-align: left;
+  margin-left: 1.5em;
+}
+.cd-testimonials-all .cd-author img {
+  box-shadow: 0 0 0 transparent;
+}
+.cd-testimonials-all.is-visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-testimonials-all.is-visible .cd-testimonials-item {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  -moz-transform: translate3d(0, 0, 0) scale(1);
+  -ms-transform: translate3d(0, 0, 0) scale(1);
+  -o-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
+}
+@media only screen and (min-width: 768px) {
+  .cd-testimonials-all .cd-testimonials-item {
+    width: 46%;
+    margin: 0 2% 3em;
+  }
+  .cd-testimonials-all .cd-author {
+    margin-left: 1em;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-testimonials-all .cd-testimonials-item {
+    width: 30%;
+    margin: 0 1.6666% 3em;
+  }
+}
+
+.close-btn {
+  position: fixed;
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 5%;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.close-btn::before, .close-btn::after {
+  /* close icon in css */
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 2px;
+  height: 24px;
+  top: 8px;
+  left: 19px;
+  background-color: #39393c;
+}
+.close-btn::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.close-btn::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.cd-light.cd-testimonials-wrapper {
+  background: #fff
+}
+.cd-light.cd-testimonials-wrapper::after {
+  color: rgba(32, 32, 34, 0.9);
+  background: #f0f0f0;
+}
+.cd-light .cd-testimonials {
+  color: #39393c;
+}
+.cd-light .flex-direction-nav li a::before, .cd-light .flex-direction-nav li a::after {
+  background-color: #39393c;
+}
+.cd-light .flex-direction-nav li:hover {
+  background: #eee;
+}
+
+body{
+  background-color: white!important;
+}
+
+</style>  
+
+
+</head>
+  <body>
+    <header>
+       
+      <img src="/images/logo.png" alt="logo">
+    
+    <img src="/images/head.png" alt="head">
+
+      
+    
+    
+    
+    
+    
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              
+            </div>
+            <div id="navbar1" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li ><a href="#">Home</a></li>
+                <li><a href="/areastovisit">AREAS TO VISIT</a></li>
+                <li><a href="/facultyreview">FACULTY REVIEW</a></li>
+                <li><a href="/s">SOCIETIES</a></li>
+                <li><a href="/secret">INTEGRATES MESSENGER SERVICE</a></li>
+                <li><a href="/selfie"><div id="colorchange">CLICK A SELFIE HERE</div></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MORE <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/aboutus">ABOUT US</a></li>
+                    <li><a href="/contactus">CONTACT US</a></li>
+                    
+                    <li class="divider"></li>
+                    
+                    <li><a href="/battleshipgame">TRY YOUR LUCK - PLAY BATTLESHIP GAME</a></li>
+                    
+                  </ul> 
+                </li>
+              </ul>
+            </div>
+            <!--/.nav-collapse -->
+          </div>
+          <!--/.container-fluid
+        </nav>
+       -->
+    
+       <div id="myOverlay" class="overlay">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+          <div class="overlay-content">
+            <form action="/action_page.php" form id="search">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+        <button class="openBtn" onclick="openSearch()"> Search Here</button>
+      
+      
+       
+  </header>
+
+  
+      <!-- <div class="content">
+          
+          
+          
+          <div class="slideshow-container">
+          
+          <div class="mySlides" >
+            <img src="/images/1.jpg" style="width:100%" height="450px">
+          </div>
+          
+          <div class="mySlides ">
+            <img src="/images/2.jpg" style="width:100%" height="450px">
+          </div>
+          
+          <div class="mySlides">
+            <img src="/images/3.jpg" style="width:100%" height="450px">
+          </div>
+          
+          <div class="mySlides">
+            <img src="/images/4.jpg" style="width:100%" height="450px">
+          </div>
+          
+          <div class="mySlides">
+            <img src="/images/5.jpg" style="width:100%" height="450px">
+          </div>
+          
+          <div class="mySlides">
+            <img src="/images/6.jpg" style="width:100%" height="450px">
+          </div>
+          
+          </div>
+          <br>
+          
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>  
+          </div>
+          </div>  -->
+
+
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="/images/1.jpg" style="width:100%" height="450px">
+              </div>
+        
+              <div class="item">
+                <img src="/images/2.jpg" style="width:100%" height="450px">
+              </div>
+            
+              <div class="item">
+                <img src="/images/3.jpg" style="width:100%" height="450px">
+              </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+          
+          <div style="margin-left:150px ; " > <img src="/images/handgesture.png" id="animation"> <img src="/images/badge.png" style="margin-left:200px">
+            <a href="/winners">CLICK HERE</a> 
+          </div>
+          <button class="accordion"><p id="mainpara">WHAT WE HAVE GOT FOR YOU</p></button>
+<div class="panel">
+<p>Worried about end term exam preparation ?
+  <br>
+   Confused regarding how to prepare effectively?
+   <br>
+   Relax!!!!.
+   <br>
+   We have got the solution .
+   <br>
+   Just click on your branch and year and you have got the treasure to score well.
+</p>
+
+</div> 
+<hr>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-lg-3">
+<div class="container">
+  <img src="/images/cse.png" alt="Avatar" class="image" style="width:230px; height:150px">
+  <div class="middle">
+    <div class="text"><ul>
+      <li><a href="/cs">1st YEAR</a></li>
+      <li><a href="google.com">2nd YEAR</a></li>
+      </ul></div>
+  </div>
+</div>
+</div>
+<div class="col-lg-3">
+    <div class="container">
+        <img src="/images/ece.png" alt="Avatar" class="image" style="width:230px; height:150px">
+        <div class="middle">
+          <div class="text"><ul>
+            <li><a href="/ece">1st YEAR</a></li>
+            <li><a href="google.com">2nd YEAR</a></li>
+            </ul></div>
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-3">
+          <div class="container">
+              <img src="/images/eee.png" alt="Avatar" class="image" style="width:230px; height:150px">
+              <div class="middle">
+                <div class="text"><ul>
+                  <li><a href="/eee">1st YEAR</a></li>
+                  <li><a href="google.com">2nd YEAR</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="container">
+                    <img src="/images/mae.png" alt="Avatar" class="image" style="width:230px; height:150px">
+                    <div class="middle">
+                      <div class="text"><ul>
+                        <li><a href="/mae">1st YEAR</a></li>
+                        <li><a href="google.com">2nd YEAR</a></li>
+                        </ul></div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+                  <hr> 
+
+                
+                  <!-- Slideshow container -->
+
+
+<div class="cd-testimonials-wrapper cd-container">
+  <h4 style="color: white ; text-align: center ; font-size: 50px">HMR TIMES</h4>
+  <ul class="cd-testimonials">
+    <li>
+      <p>REVERSO - DANCE SOCIETY AUDITIONS FOR FIRST YEAR IN FIRST BREAK IN ROOM NO 301.</p>
+      <!-- <div class="cd-author">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85807/usual_suspects_1.png" alt="Author image">
+        
+      </div> -->
+    </li>
+    <li>
+      <p>V.C. PANDEY APPOINTED AS DIRECTOR.</p>
+      <!-- <div class="cd-author">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85807/usual_suspects_2.png" alt="Author image">
+        
+      </div> -->
+    </li>
+    <li>
+        <p>END TERM PRACTICALS STARTING FROM 17 DEC.</p>
+        </li>
+  </ul>
+</div>
+
+
+<!-- <div class="newsslideshow-container">
+
+< Full-width slides/quotes -->
+<!-- <div class="mynewsSlides">
+  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+  <p class="author">- John Keats</p>
+</div>
+
+<div class="mynewsSlides">
+  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+  <p class="author">- Ernest Hemingway</p>
+</div>
+
+<div class="mynewsSlides">
+  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+  <p class="author">- Thomas A. Edison</p>
+</div> -->
+
+<!-- <div class="dot-container">
+  <span class="dotnews" onclick="currentSlide(1)"></span> 
+  <span class="dotnews" onclick="currentSlide(2)"></span> 
+  <span class="dotnews" onclick="currentSlide(3)"></span> 
+</div> -->
+
+<!-- Next/prev buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div> -->
+
+<!-- Dots/bullets/indicators -->
+               <img src="/images/heypeeps.png" style="margin-left: 500px ;margin-bottom: 5px;margin-top:1px ">
+                  
+                  <div class="signup">
+                    <p>1000+ Students Are Here. <br>
+                       Join The Most Empowered HMR Community On The Web</p>
+                       <button class="threedbutton"><a href="/signup" >Sign Up</a></button>
+                       <br>
+                        <br>
+                       
+                      <p>Already User ?</p>
+                       <button class="threedbutton"><a href="/login" >Log In</a></button>
+                  </div>
+                  <br>
+                  <footer>
+                    <p><a href="/aboutus">About Us</a> | <a href="/contactus">Contact Us</a> | <a href="#">Follow Us</a></p>
+                    <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+         <br>           
+      <p style=" margin-top: 38px ; font-size: 15px ; font-weight: bold">Copyright © BEST DUDES ®</p>
+                  </footer>
+        
+      
+      
+          
+         
+
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/85807/jquery.flexslider.js'></script>
+  <script>
+jQuery(document).ready(function($){
+  //create the slider
+  $('.cd-testimonials-wrapper').flexslider({
+    selector: ".cd-testimonials > li",
+    animation: "slide",
+    controlNav: false,
+    slideshow: false,
+    smoothHeight: true,
+    start: function(){
+      $('.cd-testimonials').children('li').css({
+        'opacity': 1,
+        'position': 'relative'
+      });
+    }
+  });
+
+  //open the testimonials modal page
+  $('.cd-see-all').on('click', function(){
+    $('.cd-testimonials-all').addClass('is-visible');
+  });
+
+  //close the testimonials modal page
+  $('.cd-testimonials-all .close-btn').on('click', function(){
+    $('.cd-testimonials-all').removeClass('is-visible');
+  });
+  $(document).keyup(function(event){
+    //check if user has pressed 'Esc'
+    if(event.which=='27'){
+      $('.cd-testimonials-all').removeClass('is-visible');	
+    }
+  });
+
+  //build the grid for the testimonials modal page
+  $('.cd-testimonials-all-wrapper').children('ul').masonry({
+    itemSelector: '.cd-testimonials-item'
+  });
+});
+</script>  
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" ", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " ";
+      setTimeout(showSlides, 2000); 
+  }
+  </script>
+  <script>var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var myslides = document.getElementsByClassName("mynewsSlides");
+      var newsdots = document.getElementsByClassName("dotnews");
+      if (n > myslides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = myslides.length}
+        for (i = 0; i < myslides.length; i++) {
+          myslides[i].style.display = "none"; 
+        }
+        for (i = 0; i < newsdots.length; i++) {
+          newsdots[i].className = newsdots[i].className.replace(" active", "");
+        }
+      myslides[slideIndex-1].style.display = "block"; 
+      newsdots[slideIndex-1].className += " active";
+    }</script>
+    
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+/* Toggle between adding and removing the "active" class,
+to highlight the button that controls the panel */
+this.classList.toggle("active");
+
+/* Toggle between hiding and showing the active panel */
+var panel = this.nextElementSibling;
+if (panel.style.display === "block") {
+  panel.style.display = "none";
+} else {
+  panel.style.display = "block";
+}
+});
+}
+
+
+</script>
+<script>
+function openSearch() {
+document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1} 
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none"; 
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block"; 
+dots[slideIndex-1].className += " active";
+}</script>
+<script type="text/javascript">
+document.getElementById('search').onsubmit = function() {
+window.location = 'http://www.google.com/search?q=site:http://127.0.0.1:3000 ' + document.getElementById('search').value;
+return false;
+}
+</script> 
+  </body>
+</html>

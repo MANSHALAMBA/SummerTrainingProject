@@ -1,0 +1,114 @@
+<html>
+    <head><link rel="stylesheet" href="/stylesheets/bootstrap.min.css" type="css/text">
+        <link rel="stylesheet" href="/stylesheets/bootstrap.css" type="css/text">
+       
+    <link rel="stylesheet" href="/stylesheets/bootstrap-grid.css" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-grid.css.map" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-grid.min.css" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-grid.min.css.map" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-reboot.css" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-reboot.css.map" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.css" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.css.map" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css.map" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css.map" type="css/text">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css.map" type="css/text">
+        <link rel="stylesheet" href="/stylesheets/style2.css" >
+        <link rel="stylesheet" href="/javascripts/bootstrap.js" type="css/text">
+        <link rel="stylesheet" href="/javascripts/bootstrap.min.js" type="css/text">
+        </head>
+        <body>
+          <h1>AAO JI AAO FORM BHAROO !!!!</h1>
+          <div style="margin-left: 290px">
+          <img src="/images/signupguy.jpeg">
+          <img src="/images/signuptext.png">
+          </div>
+          
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-top: 25px; margin-left:620px">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" form name="signupform" form method="post" action="/adddata" onsubmit="return validateForm()">
+    <div class="container">
+      <h2>Sign Up</h2>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label>Name</label>
+    <input type="text" class="form-control" placeholder="Name" name="name">
+
+    <label>Username</label>
+    <input type="text" class="form-control" placeholder="Username" name="username">
+
+    <label>Email</label>
+    <input type="email" class="form-control" placeholder="Email" name="email">
+    <br>
+    <hr>
+    <label>Password</label>
+    <input type="password" class="form-control" placeholder="Password" name="password">
+    
+    <label>Confirm Password</label>
+    <input type="password" class="form-control" placeholder="Password" name="password2">
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit"   class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+  function validateForm() {
+      var x = document.forms["signupform"]["name"].value;
+      if (x == "") {
+          alert("Name must be filled out");
+          return false;
+      }
+      var y = document.forms["signupform"]["username"].value;
+      if (y == "") {
+          alert("username must be filled out");
+          return false;
+      }
+      var z = document.forms["signupform"]["email"].value;
+      if (z == "") {
+          alert(" email must be filled out");
+          return false;
+      }
+      var a = document.forms["signupform"]["password"].value;
+      if (a == "") {
+          alert("password must be filled out");
+          return false;
+      }
+      var b = document.forms["signupform"]["password2"].value;
+      if (b == "") {
+          alert("password must be confirmed");
+          return false;
+      }
+      
+  }
+  </script>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</body>
+</html>
